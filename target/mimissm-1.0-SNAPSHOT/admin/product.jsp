@@ -109,7 +109,7 @@
                                             onclick="one(${p.pId},${info.pageNum})">编辑
                                     </button>
                                     <button type="button" class="btn btn-warning" id="mydel"
-                                            onclick="del(${p.pId})">删除
+                                            onclick="del(${p.pId},${info.pageNum})">删除
                                     </button>
                                 </td>
                             </tr>
@@ -214,13 +214,17 @@
         }
     }
     //单个删除
-    function del(pid) {
+    function del(pid,page) {
         if (confirm("确定删除吗")) {
+            var pname=$("#pname").val();
+            var typeid=$("#typeid").val();
+            var lprice=$("#lprice").val();
+            var hprice=$("#hprice").val();
           //向服务器提交请求完成删除
           <%--  window.location="${pageContext.request.contextPath}/prod/delete.action?pid="+pid;--%>
             $.ajax({
                 url:"${pageContext.request.contextPath}/prod/delete.action",
-                data:{"pid":pid},
+                data:{"pid":pid,"page":page,"pname":pname,"typeid":typeid,"lprice":lprice,"hprice":hprice},
                 type:"post",
                 dataType:"text",
                 success:function (msg) {

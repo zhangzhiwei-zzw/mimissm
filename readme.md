@@ -9,3 +9,7 @@
 8、新建sqlMapConfing.xml文件，进行分页插件的配置
 9、使用逆向工程生成pojo和mapper文件
 10、开发业务逻辑层，实现登录判断
+
+
+
+运行项目http://localhost:8080/mimissm/admin/login.jsp

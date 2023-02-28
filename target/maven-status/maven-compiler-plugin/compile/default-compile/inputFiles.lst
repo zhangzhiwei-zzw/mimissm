@@ -1,5 +1,7 @@
 E:\JavaPro\mimissm\src\main\java\com\it\controller\AdminAction.java
+E:\JavaPro\mimissm\src\main\java\com\it\utils\FileNameUtil.java
 E:\JavaPro\mimissm\src\main\java\com\it\pojo\AdminExample.java
+E:\JavaPro\mimissm\src\main\java\com\it\pojo\vo\ProductInfoVo.java
 E:\JavaPro\mimissm\src\main\java\com\it\mapper\ProductInfoMapper.java
 E:\JavaPro\mimissm\src\main\java\com\it\service\impl\ProductInfoServiceImpl.java
 E:\JavaPro\mimissm\src\main\java\com\it\service\ProductTypeService.java
